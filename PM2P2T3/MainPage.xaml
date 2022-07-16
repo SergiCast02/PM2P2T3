@@ -4,21 +4,16 @@
              x:Class="PM2P2T3.MainPage">
 
     <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
+        
+        <Image x:Name="imgmic" Source="grabarvoz.png" Margin="30,30,30,30"/>
+        
+        <Label Text="Descripción" FontSize="Title" FontAttributes="Bold" TextColor="Black" Padding="30,10,30,10"/>
+        <Entry Placeholder="añadir descripción antes de grabar" Margin="30,0,30,0" x:Name="txtdescripcion"/>
+        <Grid Margin="20,0,20,0">
+            <Button Text="Grabar Audio" Grid.Column="0" x:Name="btnGrabar" Clicked="btnGrabar_Clicked"/>
+            <Button Text="Detener Audio" Grid.Column="1" x:Name="btnDetener" Clicked="btnDetener_Clicked" IsEnabled="False"/>
+            <Button Text="Listar Audios" Grid.Row="1" Grid.ColumnSpan="2" x:Name="btnlistarAudio" Clicked="btnlistarAudio_Clicked"/>
+        </Grid>
     </StackLayout>
 
 </ContentPage>
