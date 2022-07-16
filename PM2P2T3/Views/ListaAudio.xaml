@@ -15,7 +15,7 @@
                                         <SwipeItem x:Name="btndelete" Text="borrar" IconImageSource="botondelete.png" BackgroundColor="Black"
                                                    Invoked="btndelete_Invoked"/>
                                         <SwipeItem x:Name="btnplay" Text="play" IconImageSource="botonplay.png" BackgroundColor="Black"
-                                                   Invoked="btnplay_Invoked"/>
+                                                   Invoked="btnplay_Invoked"/> 
                                     </SwipeItems>
                                 </SwipeView.RightItems>
 
